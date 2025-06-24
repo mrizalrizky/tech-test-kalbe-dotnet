@@ -8,6 +8,21 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+    options.AddPolicy("AllowSpecificOrigins", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
 builder.Services.AddApiVersioning(options =>
 {
     options.ReportApiVersions = true;
@@ -23,6 +38,7 @@ var app = builder.Build();
     app.UseAuthorization();
     app.MapControllers();
     app.UseHttpsRedirection();
+    app.UseCors("AllowAllOrigins");
     app.Run();
 }
 

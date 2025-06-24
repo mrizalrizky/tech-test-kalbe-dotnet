@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kalbepedia.Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20c6dcc8f3bdb84f78c0aff78c85afe2ad863d4d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06d404be5c438b05282448e3249d00427347845a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kalbepedia.Contracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kalbepedia.Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

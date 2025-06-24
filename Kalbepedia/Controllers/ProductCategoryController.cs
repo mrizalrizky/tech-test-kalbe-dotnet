@@ -21,7 +21,6 @@ public class ProductCategoryController : ControllerBase
     {
         var productCategory = new Kalbepedia.Models.ProductCategory(
                     request.Name);
-        Console.WriteLine("productCategory created", productCategory);
         _context.Product_Categories.Add(productCategory);
          await _context.SaveChangesAsync();
         var response = new ProductCategoryResponse(

@@ -6,13 +6,13 @@ public class Product
 {
     [Key]
     public int Id { get; set; }
-    public int ProductCategoryId { get; }
-    public string Name { get; }
-    public string Description { get; }
-    public int Price { get; }
+    public int ProductCategoryId { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public int Price { get; set; }
 
-    public int StockQty { get; }
-    public string ImageUrl { get; }
+    public int StockQty { get; set; }
+    public string ImageUrl { get; set; }
 
     public Product() { }
     public Product(int productCategoryId, string name, string description, int price, int stockQty, string imageUrl)
