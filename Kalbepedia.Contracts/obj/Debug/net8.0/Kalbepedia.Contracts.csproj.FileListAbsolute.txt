@@ -1,0 +1,12 @@
+C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\bin\Debug\net8.0\Kalbepedia.Contracts.deps.json
+C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\bin\Debug\net8.0\Kalbepedia.Contracts.dll
+C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\bin\Debug\net8.0\Kalbepedia.Contracts.pdb
+C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\obj\Debug\net8.0\Kalbepedia.Contracts.csproj.AssemblyReference.cache
+C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\obj\Debug\net8.0\Kalbepedia.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\obj\Debug\net8.0\Kalbepedia.Contracts.AssemblyInfoInputs.cache
+C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\obj\Debug\net8.0\Kalbepedia.Contracts.AssemblyInfo.cs
+C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\obj\Debug\net8.0\Kalbepedia.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\obj\Debug\net8.0\Kalbepedia.Contracts.dll
+C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\obj\Debug\net8.0\refint\Kalbepedia.Contracts.dll
+C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\obj\Debug\net8.0\Kalbepedia.Contracts.pdb
+C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\obj\Debug\net8.0\ref\Kalbepedia.Contracts.dll

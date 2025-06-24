@@ -1,0 +1,6 @@
+@Kalbepedia_HostAddress = http://localhost:5130
+
+GET {{Kalbepedia_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalbepedia", "Kalbepedia.csproj", "{330FA0F0-9747-41FE-9833-773E30E9ED52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalbepedia.Contracts", "..\Kalbepedia.Contracts\Kalbepedia.Contracts.csproj", "{6CEE9346-1636-4B5B-B0D8-B0CD64559843}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{330FA0F0-9747-41FE-9833-773E30E9ED52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330FA0F0-9747-41FE-9833-773E30E9ED52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330FA0F0-9747-41FE-9833-773E30E9ED52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330FA0F0-9747-41FE-9833-773E30E9ED52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CEE9346-1636-4B5B-B0D8-B0CD64559843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CEE9346-1636-4B5B-B0D8-B0CD64559843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CEE9346-1636-4B5B-B0D8-B0CD64559843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CEE9346-1636-4B5B-B0D8-B0CD64559843}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
