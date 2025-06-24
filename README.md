@@ -9,3 +9,7 @@ Go to a directory and clone the git repository (git clone https://github.com/mri
 3. Run "dotnet run", the app will be built and run.
 
 Open the address on your local using http://localhost:5130 (or port as specified in the console when running)
+
+## Postman Documentation
+
+https://www.postman.com/material-geoscientist-99033053/kalbepedia/collection/tlbgown/kalbepedia?action=share&creator=0
