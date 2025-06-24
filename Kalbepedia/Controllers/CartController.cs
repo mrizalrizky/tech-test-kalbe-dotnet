@@ -1,5 +1,4 @@
 using Kalbepedia.Models;
-using Kalbepedia.Contracts.Cart;
 using Microsoft.AspNetCore.Mvc;
 using Kalbepedia.Data;
 using Microsoft.EntityFrameworkCore;
@@ -18,90 +17,42 @@ public class CartController : ControllerBase
     }
 
     [HttpPost()]
-    public async  Task<IActionResult> CreateProduct(CreateProductRequest request)
+    public async  Task<IActionResult> AddToCart(CreateCartRequest request)
     {
-        var product = new Kalbepedia.Models.Product(
-            0,
-            request.ProductCategoryId,
-            request.Name,
-            request.Description,
-            request.Price,
-            request.StockQty,
-            request.ImageUrl);
-        Console.WriteLine("product created", product);
-        _context.Products.Add(product);
+        var cart = new Kalbepedia.Models.Cart(
+            request.UserId,
+            request.ProductId);
+        Console.WriteLine("Cart created", cart);
+        _context.Carts.Add(cart);
          await _context.SaveChangesAsync();
-        var response = new ProductResponse(
-            product.Id,
-            product.ProductCategoryId,
-            product.Name,
-            product.Description,
-            product.StockQty,
-            product.Price,
-            product.ImageUrl);
-        return Ok(response);
+        var response = new CartResponse(
+            cart.Id,
+            cart.UserId,
+            cart.ProductId);
+        return Ok(new { status = true, data = response });
     }
 
-    [HttpGet()]
-    public async Task<IActionResult> GetAllProducts()
+    [HttpGet("{userId:int}")]
+    public async Task<IActionResult> GetCartByUserId(int userId)
     {
-        var products = await _context.Products.ToListAsync();
+        var cart = await _context.Carts.FindAsync(userId);
+        if (cart == null) return NotFound();
 
-        var responses = products.Select(product => new ProductResponse(
-            product.Id,
-            product.ProductCategoryId,
-            product.Name,
-            product.Description,
-            product.StockQty,
-            product.Price,
-            product.ImageUrl
-        )).ToList();
+        var response = new CartResponse(
+            cart.Id,
+            cart.ProductId,
+            cart.UserId);
 
-        return Ok(responses);
+        return Ok(new {status = true, data = response});
     }
 
-    [HttpGet("{id:int}")]
-    public async Task<IActionResult> GetProductById(int id)
+    [HttpDelete("{userId:int}")]
+    public async Task<IActionResult> RemoveFromCart(int userId)
     {
-        var product = await _context.Products.FindAsync(id);
-        if (product == null) return NotFound();
+        var cart = await _context.Carts.FirstOrDefaultAsync(c => c.UserId == userId);
+        if (cart == null) return NotFound();
+        _context.Carts.Remove(cart);
 
-        var response = new ProductResponse(
-            product.Id,
-            product.ProductCategoryId,
-            product.Name,
-            product.Description,
-            product.StockQty,
-            product.Price,
-            product.ImageUrl);
-
-        return Ok(response);
-    }
-
-    [HttpPut("{id:int}")]
-    public async Task<IActionResult> UpdateProductById(int id, UpdateProductRequest request)
-    {
-        var product = await _context.Products.FindAsync(id);
-        if (product == null) return NotFound();
-
-        // product.ProductCategoryId = request.ProductCategoryId;
-        // product.Name = request.Name;
-        // product.Description = request.Description;
-        // product.Price = request.Price;
-        // product.StockQty = request.StockQty;
-        // product.ImageUrl = request.ImageUrl;
-
-        await _context.SaveChangesAsync();
-        return NoContent();
-    }
-
-    [HttpDelete("{id:int}")]
-    public async Task<IActionResult> DeleteProductById(int id)
-    {
-        var product = await _context.Products.FindAsync(id);
-        if (product == null) return NotFound();
-
-        _context.Products.Remove(product);
         await _context.SaveChangesAsync();
         return NoContent();
     }

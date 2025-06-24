@@ -28,7 +28,7 @@ public class ProductCategoryController : ControllerBase
             productCategory.Id,
             productCategory.Name);
 
-        return Ok(response);
+        return Ok(new { status = true, data = response });
     }
 
     [HttpGet()]
@@ -36,12 +36,12 @@ public class ProductCategoryController : ControllerBase
     {
         var categories = await _context.Product_Categories.ToListAsync();
 
-        var responses = categories.Select(product => new ProductCategoryResponse(
-            product.Id,
-            product.Name
+        var responses = categories.Select(category => new ProductCategoryResponse(
+            category.Id,
+            category.Name
         )).ToList();
 
-        return Ok(responses);
+        return Ok(new { status = true, data = responses });
     }
 
     [HttpGet("{id:int}")]
@@ -54,7 +54,7 @@ public class ProductCategoryController : ControllerBase
             category.Id,
             category.Name);
 
-        return Ok(response);
+        return Ok(new { status = true, data = response });
     }
 
 
@@ -68,9 +68,9 @@ public class ProductCategoryController : ControllerBase
 
         await _context.SaveChangesAsync();
 
-        return Ok(new ProductCategoryResponse(
+        return Ok(new{ status = true, data = new ProductCategoryResponse(
             category.Id,
-            category.Name));
+            category.Name)});
     }
 
     [HttpDelete("{id:int}")]

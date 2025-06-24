@@ -38,7 +38,7 @@ public class ProductController : ControllerBase
             product.StockQty,
             product.Price,
             product.ImageUrl);
-        return Ok(response);
+        return Ok(new {status = true, data = response});
     }
 
     [HttpGet()]
@@ -83,12 +83,12 @@ public class ProductController : ControllerBase
         var product = await _context.Products.FindAsync(id);
         if (product == null) return NotFound();
 
-        product.ProductCategoryId = request.ProductCategoryId;
-        product.Name = request.Name;
-        product.Description = request.Description;
-        product.Price = request.Price;
-        product.StockQty = request.StockQty;
-        product.ImageUrl = request.ImageUrl;
+        // product.ProductCategoryId = request.ProductCategoryId;
+        // product.Name = request.Name;
+        // product.Description = request.Description;
+        // product.Price = request.Price;
+        // product.StockQty = request.StockQty;
+        // product.ImageUrl = request.ImageUrl;
 
         await _context.SaveChangesAsync();
         return NoContent();

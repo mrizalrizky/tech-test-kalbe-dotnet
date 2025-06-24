@@ -19,10 +19,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 var app = builder.Build();
 {
-    app.MapControllers();
-    app.UseHttpsRedirection();
     app.UseAuthentication();
     app.UseAuthorization();
+    app.MapControllers();
+    app.UseHttpsRedirection();
     app.Run();
 }
 

@@ -12,9 +12,8 @@ public class Cart
     public int ProductId { get; set; }
     
     public Cart() { }
-    public Cart(int id, int userId, int productId)
+    public Cart(int userId, int productId)
     {
-        Id = id;
         UserId = userId;
         ProductId = productId;
     }

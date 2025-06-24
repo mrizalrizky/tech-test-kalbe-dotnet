@@ -10,5 +10,7 @@ namespace Kalbepedia.Data
 
         public DbSet<Kalbepedia.Models.Product> Products { get; set; }
         public DbSet<Kalbepedia.Models.ProductCategory> Product_Categories { get; set; }
+        public DbSet<Kalbepedia.Models.Cart> Carts { get; set; }
+        public DbSet<Kalbepedia.Models.User> Users { get; set; }
     }
 }

@@ -1,8 +1,7 @@
 
 namespace Kalbepedia.Contracts.User;
-public record UpdateUserRequest(
-    string Name,
-    string Description,
-    int Price,
-    string Category,
-    string ImageUrl);
+public record UserResponse(
+    int Id,
+    string FullName,
+    string Username,
+    string Email);

@@ -1,6 +1,5 @@
 public record CreateUserRequest(
-    string username,
-    string fullName,
-    string email,
-    string password,
-    bool isActive);
+    string Username,
+    string FullName,
+    string Email,
+    string Password);

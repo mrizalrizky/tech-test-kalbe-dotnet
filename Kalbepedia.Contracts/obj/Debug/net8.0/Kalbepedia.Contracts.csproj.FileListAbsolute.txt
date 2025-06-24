@@ -10,3 +10,4 @@ C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\
 C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\obj\Debug\net8.0\refint\Kalbepedia.Contracts.dll
 C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\obj\Debug\net8.0\Kalbepedia.Contracts.pdb
 C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\obj\Debug\net8.0\ref\Kalbepedia.Contracts.dll
+C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia.Contracts\obj\Debug\net8.0\Kalbepedia.Contracts.sourcelink.json

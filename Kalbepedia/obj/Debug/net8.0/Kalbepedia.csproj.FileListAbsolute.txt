@@ -137,3 +137,4 @@ C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia\bin\Debug\
 C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\itdev\Desktop\TECHNICAL-TEST-KALBE\backend-dotnet\Kalbepedia\obj\Debug\net8.0\Kalbepedia.sourcelink.json
